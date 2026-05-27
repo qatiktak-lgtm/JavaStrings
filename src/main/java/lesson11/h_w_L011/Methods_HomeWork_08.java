@@ -33,5 +33,24 @@ public class Methods_HomeWork_08 {
         }
         return shw8.indexOf(longest);
     }
+
+    public static void printCapitalsSimb(String s) {
+        String[] parts = s.split(" "); //s-> "Hello Course QA 84"  output:"HCQ8"
+        for (String strx : parts) {
+            System.out.print(strx.charAt(0));
+        }
+        System.out.println();
+    }
+
+    public static void printLastReverse(String s) {
+        String rev_str = new StringBuilder(s).reverse().toString(); //s-> "Hello Course QA 84" output: "4Aeo"
+        printCapitalsSimb(rev_str);
+    }
+
+    public static String insertFrom(String s, int index, String ins) {
+        String new_str = new StringBuilder(s).insert(index, ins).toString();  //s-> "Hello world", ins- > "my ", index -> 6
+        return new_str;                                                 //    result str -> "Hello my world" to return
+    }
+
 }
 
