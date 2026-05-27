@@ -10,13 +10,8 @@ public class Methods_HomeWork_08 {
     }
 
 
-    /*
-    0123456789
-    s->"ccbbbdddda"
-    return 5
-     */
     public static int CharIndexLongSubs(String shw8) {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();   // s->"ccbbbdddda",  return 5
         sb.append(shw8.charAt(0));
         for (int i = 1; i < shw8.length(); i++) {
             if (shw8.charAt(i) != shw8.charAt(i - 1)) {
